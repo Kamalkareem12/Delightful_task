@@ -64,9 +64,9 @@ src/
 
 ## 🌐 Live Public Demo URL (Publicly Accessible)
 
-* **Base URL:** `https://five-labeled-adding-lanes.trycloudflare.com`
-* **Health Check:** [https://five-labeled-adding-lanes.trycloudflare.com/health](https://five-labeled-adding-lanes.trycloudflare.com/health)
-* **List Posts:** [https://five-labeled-adding-lanes.trycloudflare.com/posts](https://five-labeled-adding-lanes.trycloudflare.com/posts)
+* **Interactive Dashboard:** [https://bat-cut-signature-missile.trycloudflare.com](https://bat-cut-signature-missile.trycloudflare.com)
+* **Health Check:** [https://bat-cut-signature-missile.trycloudflare.com/health](https://bat-cut-signature-missile.trycloudflare.com/health)
+* **List Posts:** [https://bat-cut-signature-missile.trycloudflare.com/posts](https://bat-cut-signature-missile.trycloudflare.com/posts)
 
 ---
 
