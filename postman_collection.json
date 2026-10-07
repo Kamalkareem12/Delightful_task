@@ -1,0 +1,119 @@
+{
+  "info": {
+    "_postman_id": "b3e0c034-71b3-4682-8924-a71dd2c505b2",
+    "name": "Posts DDD API",
+    "description": "Postman collection for Posts backend system (DDD + MongoDB + Kafka)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    },
+    {
+      "key": "postId",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/health",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "health"
+          ]
+        },
+        "description": "Check if API server is up and healthy."
+      },
+      "response": []
+    },
+    {
+      "name": "Create Post",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const response = pm.response.json();",
+              "if (response.success && response.data && response.data.id) {",
+              "    pm.collectionVariables.set('postId', response.data.id);",
+              "    console.log('Saved postId variable:', response.data.id);",
+              "}"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"Domain-Driven Design with Kafka\",\n    \"content\": \"Exploring event-driven architecture using Node.js, Express, MongoDB, and Apache Kafka.\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/posts",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "posts"
+          ]
+        },
+        "description": "Creates a new post in MongoDB and publishes an event to Kafka."
+      },
+      "response": []
+    },
+    {
+      "name": "List Posts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/posts",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "posts"
+          ]
+        },
+        "description": "Retrieves all posts sorted by creation date."
+      },
+      "response": []
+    },
+    {
+      "name": "Get Post by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/posts/{{postId}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "posts",
+            "{{postId}}"
+          ]
+        },
+        "description": "Retrieves a single post by its ID."
+      },
+      "response": []
+    }
+  ]
+}
