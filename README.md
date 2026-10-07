@@ -62,6 +62,14 @@ src/
 
 ---
 
+## 🌐 Live Public Demo URL (Publicly Accessible)
+
+* **Base URL:** `https://five-labeled-adding-lanes.trycloudflare.com`
+* **Health Check:** [https://five-labeled-adding-lanes.trycloudflare.com/health](https://five-labeled-adding-lanes.trycloudflare.com/health)
+* **List Posts:** [https://five-labeled-adding-lanes.trycloudflare.com/posts](https://five-labeled-adding-lanes.trycloudflare.com/posts)
+
+---
+
 ## ⚡ Event-Driven Flow (Kafka)
 
 1. Client sends `POST /posts` request with `{ "title": "...", "content": "..." }`.
