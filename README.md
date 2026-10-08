@@ -64,9 +64,9 @@ src/
 
 ## 🌐 Live Public Demo URL (Publicly Accessible)
 
-* **Interactive Dashboard:** [https://gerald-nancy-division-relation.trycloudflare.com](https://gerald-nancy-division-relation.trycloudflare.com)
-* **Health Check:** [https://gerald-nancy-division-relation.trycloudflare.com/health](https://gerald-nancy-division-relation.trycloudflare.com/health)
-* **List Posts:** [https://gerald-nancy-division-relation.trycloudflare.com/posts](https://gerald-nancy-division-relation.trycloudflare.com/posts)
+* **Interactive Dashboard:** [https://relax-mardi-update-breakdown.trycloudflare.com](https://relax-mardi-update-breakdown.trycloudflare.com)
+* **Health Check:** [https://relax-mardi-update-breakdown.trycloudflare.com/health](https://relax-mardi-update-breakdown.trycloudflare.com/health)
+* **List Posts:** [https://relax-mardi-update-breakdown.trycloudflare.com/posts](https://relax-mardi-update-breakdown.trycloudflare.com/posts)
 
 ---
 
