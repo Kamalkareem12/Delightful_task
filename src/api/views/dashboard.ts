@@ -332,6 +332,18 @@ export function getDashboardHtml(): string {
           })
         });
 
+        if (!res.ok) {
+          const errText = await res.text();
+          let msg = 'Server error (' + res.status + ')';
+          try {
+            const errObj = JSON.parse(errText);
+            msg = errObj.error || msg;
+          } catch (_) {
+            msg = 'Request timed out or tunnel disconnected. Please retry or test via http://localhost:3000';
+          }
+          throw new Error(msg);
+        }
+
         const data = await res.json();
 
         if (data.success) {
