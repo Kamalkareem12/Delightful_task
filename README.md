@@ -64,9 +64,9 @@ src/
 
 ## 🌐 Live Public Demo URL (Publicly Accessible)
 
-* **Interactive Dashboard:** [https://bat-cut-signature-missile.trycloudflare.com](https://bat-cut-signature-missile.trycloudflare.com)
-* **Health Check:** [https://bat-cut-signature-missile.trycloudflare.com/health](https://bat-cut-signature-missile.trycloudflare.com/health)
-* **List Posts:** [https://bat-cut-signature-missile.trycloudflare.com/posts](https://bat-cut-signature-missile.trycloudflare.com/posts)
+* **Interactive Dashboard:** [https://macro-serum-christmas-lessons.trycloudflare.com](https://macro-serum-christmas-lessons.trycloudflare.com)
+* **Health Check:** [https://macro-serum-christmas-lessons.trycloudflare.com/health](https://macro-serum-christmas-lessons.trycloudflare.com/health)
+* **List Posts:** [https://macro-serum-christmas-lessons.trycloudflare.com/posts](https://macro-serum-christmas-lessons.trycloudflare.com/posts)
 
 ---
 
