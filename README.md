@@ -64,9 +64,9 @@ src/
 
 ## 🌐 Live Public Demo URL (Publicly Accessible)
 
-* **Interactive Dashboard:** [https://macro-serum-christmas-lessons.trycloudflare.com](https://macro-serum-christmas-lessons.trycloudflare.com)
-* **Health Check:** [https://macro-serum-christmas-lessons.trycloudflare.com/health](https://macro-serum-christmas-lessons.trycloudflare.com/health)
-* **List Posts:** [https://macro-serum-christmas-lessons.trycloudflare.com/posts](https://macro-serum-christmas-lessons.trycloudflare.com/posts)
+* **Interactive Dashboard:** [https://gerald-nancy-division-relation.trycloudflare.com](https://gerald-nancy-division-relation.trycloudflare.com)
+* **Health Check:** [https://gerald-nancy-division-relation.trycloudflare.com/health](https://gerald-nancy-division-relation.trycloudflare.com/health)
+* **List Posts:** [https://gerald-nancy-division-relation.trycloudflare.com/posts](https://gerald-nancy-division-relation.trycloudflare.com/posts)
 
 ---
 
