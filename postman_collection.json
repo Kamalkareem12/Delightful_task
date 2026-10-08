@@ -19,34 +19,28 @@
   ],
   "item": [
     {
-      "name": "Health Check",
+      "name": "1. Health Check",
       "request": {
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{baseUrl}}/health",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "health"
-          ]
+          "raw": "http://localhost:3000/health"
         },
         "description": "Check if API server is up and healthy."
       },
       "response": []
     },
     {
-      "name": "Create Post",
+      "name": "2. Create Post (Emits Kafka Event)",
       "event": [
         {
           "listen": "test",
           "script": {
             "exec": [
-              "const response = pm.response.json();",
-              "if (response.success && response.data && response.data.id) {",
-              "    pm.collectionVariables.set('postId', response.data.id);",
-              "    console.log('Saved postId variable:', response.data.id);",
+              "var json = pm.response.json();",
+              "if (json.success && json.data && json.data.id) {",
+              "    pm.collectionVariables.set('postId', json.data.id);",
+              "    console.log('Saved postId: ' + json.data.id);",
               "}"
             ],
             "type": "text/javascript"
@@ -63,53 +57,34 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"title\": \"Domain-Driven Design with Kafka\",\n    \"content\": \"Exploring event-driven architecture using Node.js, Express, MongoDB, and Apache Kafka.\"\n}"
+          "raw": "{\n  \"title\": \"Domain-Driven Design with Kafka\",\n  \"content\": \"Testing event-driven flow with MongoDB and Apache Kafka.\"\n}"
         },
         "url": {
-          "raw": "{{baseUrl}}/posts",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "posts"
-          ]
+          "raw": "http://localhost:3000/posts"
         },
         "description": "Creates a new post in MongoDB and publishes an event to Kafka."
       },
       "response": []
     },
     {
-      "name": "List Posts",
+      "name": "3. List All Posts",
       "request": {
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{baseUrl}}/posts",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "posts"
-          ]
+          "raw": "http://localhost:3000/posts"
         },
         "description": "Retrieves all posts sorted by creation date."
       },
       "response": []
     },
     {
-      "name": "Get Post by ID",
+      "name": "4. Get Post by ID",
       "request": {
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "{{baseUrl}}/posts/{{postId}}",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "posts",
-            "{{postId}}"
-          ]
+          "raw": "http://localhost:3000/posts/{{postId}}"
         },
         "description": "Retrieves a single post by its ID."
       },
